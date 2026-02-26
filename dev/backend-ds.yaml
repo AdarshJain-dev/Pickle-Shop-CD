@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: backend
-          image: adarshjain428/picklebackend:v5
+          image: adarshjain428/picklebackend:v6
           ports:
             - containerPort: 5000
           env:
