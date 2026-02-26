@@ -15,10 +15,13 @@ spec:
     spec:
       containers:
         - name: backend
-          image: adarshjain428/picklebackend:v6
+          image: adarshjain428/picklebackend:v7
           ports:
             - containerPort: 5000
           env:
+            env:
+            - name: BASE_URL
+              value: "http://ac66e180fc2294910949aa96b8860f88-51971031.us-east-1.elb.amazonaws.com"
             - name: DB_HOST
               valueFrom:
                 configMapKeyRef:
