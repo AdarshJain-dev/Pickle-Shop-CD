@@ -26,3 +26,12 @@ spec:
             host: frontend
             port:
               number: 80
+
+    - match:
+        - uri:
+            prefix: /uploads
+      route:
+        - destination:
+            host: backend
+            port:
+              number: 80
