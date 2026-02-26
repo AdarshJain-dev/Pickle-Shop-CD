@@ -20,18 +20,18 @@ spec:
 
     - match:
         - uri:
-            prefix: /
+            prefix: /uploads
       route:
         - destination:
-            host: frontend
+            host: backend
             port:
               number: 80
 
     - match:
         - uri:
-            prefix: /uploads
+            prefix: /
       route:
         - destination:
-            host: backend
+            host: frontend
             port:
               number: 80
